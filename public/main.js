@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // createMap(json);
     geojson = json
     console.log(geojson);
+    update(geojson);
   })
 
   var context = d3.select('body')
@@ -32,5 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     context.stroke();
   }
 
-  update(geojson);
 })
